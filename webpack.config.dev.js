@@ -10,11 +10,11 @@ export default {
             {
                 test: /\.js$/,
                 include: path.join(__dirname, 'client'),
-                loaders: ['babel']
+                loaders: ['babel-loader']
             }
         ]
     },
     resolve: {
-        extensions: ['', '.js']
+        extensions: ['jsx', '.js']
     }
 }
